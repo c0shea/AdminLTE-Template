@@ -16,10 +16,11 @@ namespace AdminLTE_Template.App_Start {
                 .Include("~/Content/js/plugins/fastclick/fastclick.js")
                 .Include("~/Content/js/plugins/slimscroll/jquery.slimscroll.js")
                 .Include("~/Content/js/plugins/select2/select2.full.js")
-                .Include("~/Content/js/moment/moment.js")
+                .Include("~/Content/js/plugins/moment/moment.js")
                 .Include("~/Content/js/plugins/datepicker/bootstrap-datepicker.js")
-                .Include("~/Content/js/plugins/icheck.js")
-                .Include("~/Content/js/app.js"));
+                .Include("~/Content/js/plugins/icheck/icheck.js")
+                .Include("~/Content/js/app.js")
+                .Include("~/Content/js/init.js"));
 
 #if DEBUG
             BundleTable.EnableOptimizations = false;
