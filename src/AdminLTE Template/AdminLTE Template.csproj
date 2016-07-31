@@ -16,7 +16,7 @@
     <RootNamespace>AdminLTE_Template</RootNamespace>
     <AssemblyName>AdminLTE Template</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -35,12 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -89,11 +90,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\AdminLTE.min.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\skins\skin-black-light.css" />
+    <Content Include="Content\css\skins\skin-black-light.min.css" />
+    <Content Include="Content\css\skins\skin-black.css" />
+    <Content Include="Content\css\skins\skin-black.min.css" />
+    <Content Include="Content\css\skins\skin-blue-light.css" />
+    <Content Include="Content\css\skins\skin-blue-light.min.css" />
+    <Content Include="Content\css\skins\skin-blue.css" />
+    <Content Include="Content\css\skins\skin-blue.min.css" />
+    <Content Include="Content\css\skins\skin-green-light.css" />
+    <Content Include="Content\css\skins\skin-green-light.min.css" />
+    <Content Include="Content\css\skins\skin-green.css" />
+    <Content Include="Content\css\skins\skin-green.min.css" />
+    <Content Include="Content\css\skins\skin-purple-light.css" />
+    <Content Include="Content\css\skins\skin-purple-light.min.css" />
+    <Content Include="Content\css\skins\skin-purple.css" />
+    <Content Include="Content\css\skins\skin-purple.min.css" />
+    <Content Include="Content\css\skins\skin-red-light.css" />
+    <Content Include="Content\css\skins\skin-red-light.min.css" />
+    <Content Include="Content\css\skins\skin-red.css" />
+    <Content Include="Content\css\skins\skin-red.min.css" />
+    <Content Include="Content\css\skins\skin-yellow-light.css" />
+    <Content Include="Content\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\css\skins\skin-yellow.css" />
+    <Content Include="Content\css\skins\skin-yellow.min.css" />
+    <Content Include="Content\css\skins\_all-skins.css" />
+    <Content Include="Content\css\skins\_all-skins.min.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\js\app.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\fastclick.min.js" />
+    <Content Include="Content\js\jquery-2.2.4.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -102,6 +139,11 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,8 +153,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -125,16 +167,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>3552</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3552/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
