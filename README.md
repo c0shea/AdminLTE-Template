@@ -5,7 +5,10 @@ The AdminLTE Template is a ready-to-go template for constructing high-quality AS
 This template aims to make development faster and easier since the basic structure of all the dependencies is already defined.
 
 [AdminLTE](https://github.com/almasaeed2010/AdminLTE) was created and is maintained by [Abdullah Almsaeed](https://almsaeedstudio.com/).
- 
+
+## Versioning
+The version of the template going forward will follow the AdminLTE version number. That means version 2.3.8 of this plugin template directly correlates to version 2.3.8 of AdminLTE.
+
 ## Included Dependencies
 | NAME | VERSION | REPO |
 | :--- | :---: | :---: |
