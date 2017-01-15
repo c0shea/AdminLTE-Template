@@ -11,9 +11,9 @@
     <Tags>AdminLTE, Bootstrap, C#, MVC, ASP.NET</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,15.0)" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[11.0,15.0)" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,14.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[11.0,14.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6,)" />
