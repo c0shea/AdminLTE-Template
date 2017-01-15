@@ -208,12 +208,6 @@
     <Content Include="Content\js\plugins\icheck\icheck.min.js" />
     <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.js" />
     <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.min.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.date.extensions.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.extensions.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.numeric.extensions.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.phone.extensions.js" />
-    <Content Include="Content\js\plugins\inputmask\jquery.inputmask.regex.extensions.js" />
     <Content Include="Content\js\plugins\jquery\jquery-2.2.4.js" />
     <Content Include="Content\js\plugins\jquery\jquery-2.2.4.min.js" />
     <Content Include="Content\js\plugins\moment\moment.js" />
