@@ -20,6 +20,7 @@ namespace AdminLTE_Template.App_Start {
                 .Include("~/Content/js/plugins/datepicker/bootstrap-datepicker.js")
                 .Include("~/Content/js/plugins/icheck/icheck.js")
                 .Include("~/Content/js/plugins/validator.js")
+                .Include("~/Content/js/plugins/inputmask/jquery.inputmask.bundle.js")
                 .Include("~/Content/js/app.js")
                 .Include("~/Content/js/init.js"));
 
