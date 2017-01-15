@@ -8,5 +8,10 @@ namespace AdminLTE_Template.Controllers
         {
             return View();
         }
+
+        public ActionResult AnotherLink()
+        {
+            return View("Index");
+        }
     }
 }
