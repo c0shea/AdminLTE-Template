@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>AdminLTE Template</Name>
+    <Description>A C# ASP.NET MVC Project Template for Visual Studio using the popular AdminLTE Bootstrap Template by Abdullah Almsaeed.</Description>
+    <Icon>AdminLTE.ico</Icon>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <RequiredFrameworkVersion>3.5</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>22e59e49-378b-41cf-8cd6-b27f093d061b</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AdminLTE</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+      <Folder Name="App_Data">
+        
+      </Folder>
+      <Folder Name="App_Start">
+        
+      </Folder>
+      <Folder Name="Content">
+        
+      </Folder>
+      <Folder Name="Controllers">
+        
+      </Folder>
+      <Folder Name="Models">
+
+      </Folder>
+      <Folder Name="Views">
+
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

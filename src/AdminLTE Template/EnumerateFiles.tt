@@ -1,0 +1,120 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".txt" #>
+<#
+    ProcessDirectory(Host.ResolvePath(""), 1);
+#>
+<#+
+    void ProcessDirectory(string baseDir, int indentLevel)
+    {
+        var filesToExclude = new[]
+        {
+            Path.Combine(baseDir, "AdminLTE Template.csproj"),
+            Path.Combine(baseDir, "AdminLTE Template.csproj.user"),
+            Path.Combine(baseDir, "AdminLTE Template.vstemplate"),
+            Path.Combine(baseDir, "AdminLTE.ico"),
+            Path.Combine(baseDir, "EnumerateFiles.tt"),
+            Path.Combine(baseDir, "EnumerateFiles.txt"),
+            Path.Combine(baseDir, "ProjectTemplate.csproj")
+        };
+
+        var directoriesToExclude = new[]
+        {
+            Path.Combine(baseDir, "bin"),
+            Path.Combine(baseDir, "obj"),
+            Path.Combine(baseDir, "Properties")
+        };
+
+        var codeFileTypes = new[]
+        {
+            ".cs",
+            ".cshtml",
+            ".config",
+            ".asax"
+        };
+
+        foreach (string file in Directory.GetFiles(baseDir))
+        {
+            if (filesToExclude.Contains(file))
+            {
+                continue;
+            }
+
+            if (EndsWithAny(file, codeFileTypes))
+            {
+                WriteLine(Indent("<ProjectItem ReplaceParameters=\"true\" OpenInEditor=\"true\">" + Path.GetFileName(file) + "</ProjectItem>", indentLevel));
+            }
+            else
+            {
+                WriteLine(Indent("<ProjectItem>" + Path.GetFileName(file) + "</ProjectItem>", indentLevel));
+            }
+        }
+
+        foreach (string subdirectory in Directory.GetDirectories(baseDir))
+        {
+            if (directoriesToExclude.Contains(subdirectory))
+            {
+                continue;
+            }
+
+            WriteLine(Indent("<Folder Name=\"" + new DirectoryInfo(subdirectory).Name + "\">", indentLevel));
+            ProcessDirectory(subdirectory, indentLevel + 1);
+            WriteLine(Indent("</Folder>", indentLevel));
+        }
+    }
+
+    static string Indent(string value, int indent)
+    {
+        const int spacesPerIndent = 2;
+
+        return new string(' ', indent * spacesPerIndent) + value;
+    }
+
+    static bool EndsWithAny(string value, IEnumerable<string> endings)
+    {
+        foreach (var ending in endings)
+        {
+            if (value.EndsWith(ending))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /*
+
+
+<TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+      <Folder Name="App_Data">
+        
+      </Folder>
+      <Folder Name="App_Start">
+        
+      </Folder>
+      <Folder Name="Content">
+        
+      </Folder>
+      <Folder Name="Controllers">
+        
+      </Folder>
+      <Folder Name="Models">
+
+      </Folder>
+      <Folder Name="Views">
+
+      </Folder>
+    </Project>
+  </TemplateContent>
+
+*/
+
+#>
