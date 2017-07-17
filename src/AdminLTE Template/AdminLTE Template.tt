@@ -4,21 +4,41 @@
 <#@ import namespace="System.Text" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.IO" #>
-<#@ output extension=".txt" #>
+<#@ output extension=".vstemplate" #>
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>AdminLTE Template</Name>
+    <Description>A C# ASP.NET MVC Project Template for Visual Studio using the popular AdminLTE Bootstrap Template by Abdullah Almsaeed.</Description>
+    <Icon>AdminLTE.ico</Icon>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <RequiredFrameworkVersion>3.5</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>22e59e49-378b-41cf-8cd6-b27f093d061b</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AdminLTE</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
 <#
-    ProcessDirectory(Host.ResolvePath(""), 1);
+    const int startingIndentation = 3;
+    ProcessDirectory(Host.ResolvePath(""), startingIndentation);
 #>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
 <#+
     void ProcessDirectory(string baseDir, int indentLevel)
     {
         var filesToExclude = new[]
         {
+            Path.Combine(baseDir, "AdminLTE Template.tt"),
             Path.Combine(baseDir, "AdminLTE Template.csproj"),
             Path.Combine(baseDir, "AdminLTE Template.csproj.user"),
             Path.Combine(baseDir, "AdminLTE Template.vstemplate"),
             Path.Combine(baseDir, "AdminLTE.ico"),
-            Path.Combine(baseDir, "EnumerateFiles.tt"),
-            Path.Combine(baseDir, "EnumerateFiles.txt"),
             Path.Combine(baseDir, "ProjectTemplate.csproj")
         };
 
@@ -41,6 +61,13 @@
         {
             if (filesToExclude.Contains(file))
             {
+                continue;
+            }
+
+            // Handle special cases
+            if (file == Path.Combine(baseDir, "AssemblyInfo.cs"))
+            {
+                WriteLine(Indent("<ProjectItem ReplaceParameters=\"true\" TargetFileName=\"Properties\\AssemblyInfo.cs\">AssemblyInfo.cs</ProjectItem>", indentLevel));
                 continue;
             }
 
@@ -86,35 +113,4 @@
 
         return false;
     }
-
-    /*
-
-
-<TemplateContent>
-    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
-      <Folder Name="App_Data">
-        
-      </Folder>
-      <Folder Name="App_Start">
-        
-      </Folder>
-      <Folder Name="Content">
-        
-      </Folder>
-      <Folder Name="Controllers">
-        
-      </Folder>
-      <Folder Name="Models">
-
-      </Folder>
-      <Folder Name="Views">
-
-      </Folder>
-    </Project>
-  </TemplateContent>
-
-*/
-
 #>

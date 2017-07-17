@@ -15,25 +15,32 @@
   </TemplateData>
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem>AdminLTE Template.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
       <Folder Name="App_Data">
-        
       </Folder>
       <Folder Name="App_Start">
-        
       </Folder>
       <Folder Name="Content">
-        
+        <Folder Name="css">
+        </Folder>
+        <Folder Name="fonts">
+        </Folder>
+        <Folder Name="img">
+        </Folder>
+        <Folder Name="js">
+        </Folder>
       </Folder>
       <Folder Name="Controllers">
-        
       </Folder>
       <Folder Name="Models">
-
       </Folder>
       <Folder Name="Views">
-
+        <Folder Name="Home">
+        </Folder>
+        <Folder Name="Shared">
+        </Folder>
       </Folder>
     </Project>
   </TemplateContent>

@@ -64,20 +64,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="AdminLTE Template.vstemplate">
-      <SubType>Designer</SubType>
-    </VSTemplate>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AdminLTE.ico" />
-    <Content Include="EnumerateFiles.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EnumerateFiles.txt</LastGenOutput>
-    </Content>
-    <Content Include="EnumerateFiles.txt">
+    <Content Include="AdminLTE Template.vstemplate">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EnumerateFiles.tt</DependentUpon>
+      <DependentUpon>AdminLTE Template.tt</DependentUpon>
+    </Content>
+    <Content Include="AdminLTE.ico" />
+    <Content Include="AdminLTE Template.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdminLTE Template.vstemplate</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
