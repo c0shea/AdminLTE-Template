@@ -49,8 +49,15 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="AssemblyInfo.cs" />
+        <Compile Include="App_Start\BundleConfig.cs" />
+        <Compile Include="App_Start\RouteConfig.cs" />
     </ItemGroup>
     <ItemGroup>
+        <Folder Include="App_Data\" />
+        <Folder Include="Content\" />
+        <Folder Include="Controllers\" />
+        <Folder Include="Models\" />
+        <Folder Include="Views\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

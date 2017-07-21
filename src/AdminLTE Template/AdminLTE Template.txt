@@ -16,6 +16,20 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <Folder Name="App_Data">
+      </Folder>
+      <Folder Name="App_Start">
+        <ProjectItem ReplaceParameters="true" OpenInEditor="true">BundleConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" OpenInEditor="true">RouteConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Content">
+      </Folder>
+      <Folder Name="Controllers">
+      </Folder>
+      <Folder Name="Models">
+      </Folder>
+      <Folder Name="Views">
+      </Folder>
     </Project>
   </TemplateContent>
 </VSTemplate>
