@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AdminLTE Template")]
+[assembly: AssemblyTitle("$projectname$")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Connor O'Shea")]
-[assembly: AssemblyProduct("AdminLTE Template")]
-[assembly: AssemblyCopyright("Copyright © Connor O'Shea 2017")]
+[assembly: AssemblyCompany("$registeredorganization$")]
+[assembly: AssemblyProduct("$projectname$")]
+[assembly: AssemblyCopyright("Copyright © $registeredorganization$ $year$")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,14 +20,15 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3a94d963-e682-4006-a2eb-8d20b5571ef7")]
+[assembly: Guid("$guid1$")]
 
 // Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
+//      Value           Semantic Versioning 2.0 (http://semver.org/)
+//      =============   ============================================
+//      Major Version   Increment when you make incompatible API changes
+//      Minor Version   Increment when you add functionality in a backwards-compatible manner
+//      Build Number    Increment when you make backwards-compatible bug fixes
+//      Revision        Not used
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:

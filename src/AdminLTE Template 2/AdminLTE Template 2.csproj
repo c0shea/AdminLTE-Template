@@ -9,12 +9,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{3A94D963-E682-4006-A2EB-8D20B5571EF7}</ProjectGuid>
+    <ProjectGuid>{B1AC5027-B202-412C-9B96-9386AFA50AFE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AdminLTE_Template</RootNamespace>
     <AssemblyName>AdminLTE Template</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -58,39 +58,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AssemblyInfo.cs" />
-    <None Include="ProjectTemplate.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <VSTemplate Include="AdminLTE Template.vstemplate">
-      <SubType>Designer</SubType>
-    </VSTemplate>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AdminLTE Template.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AdminLTE Template.txt</LastGenOutput>
-    </Content>
+    <None Include="Class1.cs" />
     <Content Include="AdminLTE Template.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AdminLTE Template.tt</DependentUpon>
-    </Content>
-    <Content Include="AdminLTE.ico" />
-    <Content Include="ProjectTemplate.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ProjectTemplate.txt</LastGenOutput>
     </Content>
     <Content Include="ProjectTemplate.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectTemplate.tt</DependentUpon>
     </Content>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminLTE.ico" />
+    <Content Include="AdminLTE Template.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdminLTE Template.txt</LastGenOutput>
+    </Content>
+    <Content Include="ProjectTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProjectTemplate.txt</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+    <Folder Include="Content\css\" />
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Content\img\" />
+    <Folder Include="Content\js\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>echo Transforming all T4 templates...
+"%25COMMONPROGRAMFILES(x86)%25\Microsoft Shared\TextTemplating\14.0\TextTransform.exe" -out "$(ProjectDir)AdminLTE Template.vstemplate" "$(ProjectDir)AdminLTE Template.tt"
+"%25COMMONPROGRAMFILES(x86)%25\Microsoft Shared\TextTemplating\14.0\TextTransform.exe" -out "$(ProjectDir)ProjectTemplate.csproj" "$(ProjectDir)ProjectTemplate.tt"</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

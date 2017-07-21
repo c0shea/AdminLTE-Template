@@ -15,7 +15,7 @@
     <ProjectSubType>CSharp</ProjectSubType>
     <RequiredFrameworkVersion>3.5</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
-    <TemplateID>d5eb7a76-1c73-42c3-a230-f1df9755cd59</TemplateID>
+    <TemplateID>22e59e49-378b-41cf-8cd6-b27f093d061b</TemplateID>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>AdminLTE</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
@@ -35,13 +35,11 @@
         var filesToExclude = new[]
         {
             Path.Combine(baseDir, "AdminLTE Template.tt"),
-            Path.Combine(baseDir, "AdminLTE Template.txt"),
             Path.Combine(baseDir, "AdminLTE Template.csproj"),
             Path.Combine(baseDir, "AdminLTE Template.csproj.user"),
             Path.Combine(baseDir, "AdminLTE Template.vstemplate"),
             Path.Combine(baseDir, "AdminLTE.ico"),
             Path.Combine(baseDir, "ProjectTemplate.tt"),
-            Path.Combine(baseDir, "ProjectTemplate.txt"),
             Path.Combine(baseDir, "ProjectTemplate.csproj")
         };
 
