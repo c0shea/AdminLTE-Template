@@ -15,7 +15,6 @@
   </TemplateData>
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
-      <ProjectItem>AdminLTE Template.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
       <Folder Name="App_Data">
@@ -38,6 +37,7 @@
       </Folder>
       <Folder Name="Views">
         <Folder Name="Home">
+          <ProjectItem ReplaceParameters="true" OpenInEditor="true">Index.cshtml</ProjectItem>
         </Folder>
         <Folder Name="Shared">
         </Folder>

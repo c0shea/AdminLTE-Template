@@ -59,20 +59,28 @@
   <ItemGroup>
     <None Include="AssemblyInfo.cs" />
     <None Include="Class1.cs" />
-    <None Include="ProjectTemplate.csproj">
-      <SubType>Designer</SubType>
-    </None>
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminLTE Template.vstemplate">
+    <None Include="AdminLTE Template.vstemplate">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AdminLTE Template.tt</DependentUpon>
-    </Content>
+    </None>
     <Content Include="AdminLTE.ico" />
     <Content Include="AdminLTE Template.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AdminLTE Template.vstemplate</LastGenOutput>
+    </Content>
+    <None Include="ProjectTemplate.csproj">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectTemplate.tt</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ProjectTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProjectTemplate.csproj</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -84,7 +92,6 @@
     <Folder Include="Content\js\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +99,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>echo Transforming all T4 templates...
+"%25COMMONPROGRAMFILES(x86)%25\Microsoft Shared\TextTemplating\14.0\TextTransform.exe" -out "$(ProjectDir)AdminLTE Template.vstemplate" "$(ProjectDir)AdminLTE Template.tt"
+"%25COMMONPROGRAMFILES(x86)%25\Microsoft Shared\TextTemplating\14.0\TextTransform.exe" -out "$(ProjectDir)ProjectTemplate.csproj" "$(ProjectDir)ProjectTemplate.tt"</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

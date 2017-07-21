@@ -1,0 +1,205 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.ComponentModel" #>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".csproj" #>
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>$guid1$</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
+    <TargetFrameworkVersion>v$targetframeworkversion$</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/>
+    $if$ ($targetframeworkversion$ >= 3.5)
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    $endif$
+    $if$ ($targetframeworkversion$ >= 4.0)
+    <Reference Include="Microsoft.CSharp"/>
+    $endif$
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Xml"/>
+  </ItemGroup>
+<#
+    const int startingIndentation = 1;
+    var baseDir = Host.ResolvePath("");
+    ProcessFiles(baseDir, startingIndentation);
+    ProcessEmptyDirectories(baseDir, startingIndentation);
+#>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+
+ </Project>
+ <#+
+    readonly string[] _filesToExclude =
+    {
+        "AdminLTE Template.tt",
+        "AdminLTE Template.csproj",
+        "AdminLTE Template.csproj.user",
+        "AdminLTE Template.vstemplate",
+        "AdminLTE.ico",
+        "ProjectTemplate.tt",
+        "ProjectTemplate.csproj"
+    };
+
+    readonly string[] _directoriesToExclude =
+    {
+        "bin",
+        "obj",
+        "Properties"
+    };
+
+    void ProcessFiles(string baseDir, int indentLevel)
+    {
+        var files = GetAllFilesInDirectory(baseDir);
+        files = files.Where(f => !_filesToExclude.Contains(f.FilePath) &&
+                                 !StartsWithAny(f.FilePath, _directoriesToExclude));
+        
+        foreach (var fileGroup in files.GroupBy(g => g.ShouldCompile))
+        {
+            WriteLine(Indent("<ItemGroup>", indentLevel));
+
+            foreach (var file in fileGroup)
+            {
+                if (file.ShouldCompile)
+                {
+                    WriteLine(Indent("<Compile Include=\"" + file.FilePath + "\" />", indentLevel + 1));
+                }
+                else
+                {
+                    WriteLine(Indent("<Content Include=\"" + file.FilePath + "\" />", indentLevel + 1));
+                }
+            }
+
+            WriteLine(Indent("</ItemGroup>", indentLevel));
+        }
+    }
+
+    void ProcessEmptyDirectories(string baseDir, int indentLevel)
+    {
+        var directories = GetEmptyDirectories(baseDir, baseDir);
+        directories = directories.Where(d => !StartsWithAny(d, _directoriesToExclude));
+        
+        WriteLine(Indent("<ItemGroup>", indentLevel));
+
+        foreach (var directory in directories)
+        {
+            WriteLine(Indent("<Folder Include=\"" + directory + "\\\" />", indentLevel + 1));
+        }
+
+        WriteLine(Indent("</ItemGroup>", indentLevel));
+    }
+
+    static IEnumerable<FileInclude> GetAllFilesInDirectory(string baseDir)
+    {
+        var fileTypesToCompile = new[]
+        {
+            ".cs",
+            ".asax"
+        };
+
+        var files = Directory.GetFiles(baseDir, "*", SearchOption.AllDirectories);
+
+        foreach (var file in files)
+        {
+            yield return new FileInclude
+            {
+                ShouldCompile = EndsWithAny(file, fileTypesToCompile),
+                FilePath = file.Replace(baseDir + @"\", "")
+            };
+        }
+    }
+
+    static IEnumerable<string> GetEmptyDirectories(string baseDir, string directoryToEvaluate)
+    {
+        var emptyDirectories = new List<string>();
+    
+        foreach (var directory in Directory.GetDirectories(directoryToEvaluate))
+        {
+            emptyDirectories.AddRange(GetEmptyDirectories(baseDir, directory));
+        
+            if (Directory.GetFiles(directory).Length == 0 && Directory.GetDirectories(directory).Length == 0)
+            {
+                emptyDirectories.Add(directory.Replace(baseDir + @"\", ""));
+            }
+        }
+    
+        return emptyDirectories;
+    }
+
+    class FileInclude
+    {
+        public bool ShouldCompile { get; set; }
+        public string FilePath { get; set; }
+    }
+    
+    static string Indent(string value, int indent)
+    {
+        const int spacesPerIndent = 2;
+
+        return new string(' ', indent * spacesPerIndent) + value;
+    }
+
+    static bool EndsWithAny(string value, IEnumerable<string> endings)
+    {
+        foreach (var ending in endings)
+        {
+            if (value.EndsWith(ending))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    static bool StartsWithAny(string value, IEnumerable<string> beginnings)
+    {
+        foreach (var beginning in beginnings)
+        {
+            if (value.StartsWith(beginning))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+#>
