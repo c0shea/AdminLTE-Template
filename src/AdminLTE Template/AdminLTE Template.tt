@@ -76,7 +76,7 @@
 
             if (EndsWithAny(file, codeFileTypes))
             {
-                WriteLine(Indent("<ProjectItem ReplaceParameters=\"true\" OpenInEditor=\"true\">" + Path.GetFileName(file) + "</ProjectItem>", indentLevel));
+                WriteLine(Indent("<ProjectItem ReplaceParameters=\"true\">" + Path.GetFileName(file) + "</ProjectItem>", indentLevel));
             }
             else
             {

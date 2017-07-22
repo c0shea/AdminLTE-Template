@@ -16,17 +16,17 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Global.asax</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Global.asax.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">packages.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Web.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Web.Debug.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Global.asax.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.Release.config</ProjectItem>
       <Folder Name="App_Data">
       </Folder>
       <Folder Name="App_Start">
-        <ProjectItem ReplaceParameters="true" OpenInEditor="true">BundleConfig.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" OpenInEditor="true">RouteConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">BundleConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">RouteConfig.cs</ProjectItem>
       </Folder>
       <Folder Name="Content">
         <Folder Name="css">
@@ -185,20 +185,20 @@
         </Folder>
       </Folder>
       <Folder Name="Controllers">
-        <ProjectItem ReplaceParameters="true" OpenInEditor="true">HomeController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">HomeController.cs</ProjectItem>
       </Folder>
       <Folder Name="Models">
       </Folder>
       <Folder Name="Views">
-        <ProjectItem ReplaceParameters="true" OpenInEditor="true">web.config</ProjectItem>
+        <ProjectItem ReplaceParameters="true">web.config</ProjectItem>
         <Folder Name="Home">
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">Index.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true">Index.cshtml</ProjectItem>
         </Folder>
         <Folder Name="Shared">
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_ControlSidebar.cshtml</ProjectItem>
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_Header.cshtml</ProjectItem>
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_Layout.cshtml</ProjectItem>
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_Sidebar.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true">_ControlSidebar.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true">_Header.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true">_Sidebar.cshtml</ProjectItem>
         </Folder>
       </Folder>
     </Project>
