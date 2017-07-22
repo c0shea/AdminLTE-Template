@@ -16,6 +16,12 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Global.asax.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Web.Release.config</ProjectItem>
       <Folder Name="App_Data">
       </Folder>
       <Folder Name="App_Start">
@@ -23,12 +29,177 @@
         <ProjectItem ReplaceParameters="true" OpenInEditor="true">RouteConfig.cs</ProjectItem>
       </Folder>
       <Folder Name="Content">
+        <Folder Name="css">
+          <ProjectItem>AdminLTE.css</ProjectItem>
+          <ProjectItem>AdminLTE.min.css</ProjectItem>
+          <ProjectItem>bootstrap.css</ProjectItem>
+          <ProjectItem>bootstrap.css.map</ProjectItem>
+          <ProjectItem>bootstrap.min.css</ProjectItem>
+          <ProjectItem>bootstrap.min.css.map</ProjectItem>
+          <ProjectItem>datepicker3.css</ProjectItem>
+          <ProjectItem>font-awesome.css</ProjectItem>
+          <ProjectItem>font-awesome.min.css</ProjectItem>
+          <ProjectItem>select2.css</ProjectItem>
+          <ProjectItem>select2.min.css</ProjectItem>
+          <Folder Name="icheck">
+            <ProjectItem>aero.css</ProjectItem>
+            <ProjectItem>aero.min.css</ProjectItem>
+            <ProjectItem>blue.css</ProjectItem>
+            <ProjectItem>blue.min.css</ProjectItem>
+            <ProjectItem>green.css</ProjectItem>
+            <ProjectItem>green.min.css</ProjectItem>
+            <ProjectItem>grey.css</ProjectItem>
+            <ProjectItem>grey.min.css</ProjectItem>
+            <ProjectItem>minimal.css</ProjectItem>
+            <ProjectItem>minimal.min.css</ProjectItem>
+            <ProjectItem>orange.css</ProjectItem>
+            <ProjectItem>orange.min.css</ProjectItem>
+            <ProjectItem>pink.css</ProjectItem>
+            <ProjectItem>pink.min.css</ProjectItem>
+            <ProjectItem>purple.css</ProjectItem>
+            <ProjectItem>purple.min.css</ProjectItem>
+            <ProjectItem>red.css</ProjectItem>
+            <ProjectItem>red.min.css</ProjectItem>
+            <ProjectItem>yellow.css</ProjectItem>
+            <ProjectItem>yellow.min.css</ProjectItem>
+          </Folder>
+          <Folder Name="skins">
+            <ProjectItem>skin-black-light.css</ProjectItem>
+            <ProjectItem>skin-black-light.min.css</ProjectItem>
+            <ProjectItem>skin-black.css</ProjectItem>
+            <ProjectItem>skin-black.min.css</ProjectItem>
+            <ProjectItem>skin-blue-light.css</ProjectItem>
+            <ProjectItem>skin-blue-light.min.css</ProjectItem>
+            <ProjectItem>skin-blue.css</ProjectItem>
+            <ProjectItem>skin-blue.min.css</ProjectItem>
+            <ProjectItem>skin-green-light.css</ProjectItem>
+            <ProjectItem>skin-green-light.min.css</ProjectItem>
+            <ProjectItem>skin-green.css</ProjectItem>
+            <ProjectItem>skin-green.min.css</ProjectItem>
+            <ProjectItem>skin-purple-light.css</ProjectItem>
+            <ProjectItem>skin-purple-light.min.css</ProjectItem>
+            <ProjectItem>skin-purple.css</ProjectItem>
+            <ProjectItem>skin-purple.min.css</ProjectItem>
+            <ProjectItem>skin-red-light.css</ProjectItem>
+            <ProjectItem>skin-red-light.min.css</ProjectItem>
+            <ProjectItem>skin-red.css</ProjectItem>
+            <ProjectItem>skin-red.min.css</ProjectItem>
+            <ProjectItem>skin-yellow-light.css</ProjectItem>
+            <ProjectItem>skin-yellow-light.min.css</ProjectItem>
+            <ProjectItem>skin-yellow.css</ProjectItem>
+            <ProjectItem>skin-yellow.min.css</ProjectItem>
+            <ProjectItem>_all-skins.css</ProjectItem>
+            <ProjectItem>_all-skins.min.css</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="fonts">
+          <ProjectItem>fontawesome-webfont.eot</ProjectItem>
+          <ProjectItem>fontawesome-webfont.svg</ProjectItem>
+          <ProjectItem>fontawesome-webfont.ttf</ProjectItem>
+          <ProjectItem>fontawesome-webfont.woff</ProjectItem>
+          <ProjectItem>fontawesome-webfont.woff2</ProjectItem>
+          <ProjectItem>FontAwesome.otf</ProjectItem>
+          <ProjectItem>glyphicons-halflings-regular.eot</ProjectItem>
+          <ProjectItem>glyphicons-halflings-regular.svg</ProjectItem>
+          <ProjectItem>glyphicons-halflings-regular.ttf</ProjectItem>
+          <ProjectItem>glyphicons-halflings-regular.woff</ProjectItem>
+          <ProjectItem>glyphicons-halflings-regular.woff2</ProjectItem>
+        </Folder>
+        <Folder Name="img">
+          <Folder Name="img">
+            <ProjectItem>user.jpg</ProjectItem>
+            <Folder Name="icheck">
+              <ProjectItem>aero.png</ProjectItem>
+              <ProjectItem>aero@2x.png</ProjectItem>
+              <ProjectItem>blue.png</ProjectItem>
+              <ProjectItem>blue@2x.png</ProjectItem>
+              <ProjectItem>green.png</ProjectItem>
+              <ProjectItem>green@2x.png</ProjectItem>
+              <ProjectItem>grey.png</ProjectItem>
+              <ProjectItem>grey@2x.png</ProjectItem>
+              <ProjectItem>minimal.png</ProjectItem>
+              <ProjectItem>minimal@2x.png</ProjectItem>
+              <ProjectItem>orange.png</ProjectItem>
+              <ProjectItem>orange@2x.png</ProjectItem>
+              <ProjectItem>pink.png</ProjectItem>
+              <ProjectItem>pink@2x.png</ProjectItem>
+              <ProjectItem>purple.png</ProjectItem>
+              <ProjectItem>purple@2x.png</ProjectItem>
+              <ProjectItem>red.png</ProjectItem>
+              <ProjectItem>red@2x.png</ProjectItem>
+              <ProjectItem>yellow.png</ProjectItem>
+              <ProjectItem>yellow@2x.png</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="js">
+          <ProjectItem>app.js</ProjectItem>
+          <ProjectItem>app.min.js</ProjectItem>
+          <ProjectItem>init.js</ProjectItem>
+          <Folder Name="plugins">
+            <Folder Name="bootstrap">
+              <ProjectItem>bootstrap.js</ProjectItem>
+              <ProjectItem>bootstrap.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="datepicker">
+              <ProjectItem>bootstrap-datepicker.js</ProjectItem>
+            </Folder>
+            <Folder Name="fastclick">
+              <ProjectItem>fastclick.js</ProjectItem>
+              <ProjectItem>fastclick.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="icheck">
+              <ProjectItem>icheck.js</ProjectItem>
+              <ProjectItem>icheck.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="inputmask">
+              <ProjectItem>jquery.inputmask.bundle.js</ProjectItem>
+              <ProjectItem>jquery.inputmask.bundle.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="jquery">
+              <ProjectItem>jquery-2.2.4.js</ProjectItem>
+              <ProjectItem>jquery-2.2.4.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="moment">
+              <ProjectItem>moment.js</ProjectItem>
+              <ProjectItem>moment.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="select2">
+              <ProjectItem>select2.full.js</ProjectItem>
+              <ProjectItem>select2.full.min.js</ProjectItem>
+              <ProjectItem>select2.js</ProjectItem>
+              <ProjectItem>select2.min.js</ProjectItem>
+              <Folder Name="i18n">
+                <ProjectItem>en.js</ProjectItem>
+              </Folder>
+            </Folder>
+            <Folder Name="slimscroll">
+              <ProjectItem>jquery.slimscroll.js</ProjectItem>
+              <ProjectItem>jquery.slimscroll.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="validator">
+              <ProjectItem>validator.js</ProjectItem>
+              <ProjectItem>validator.min.js</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
       </Folder>
       <Folder Name="Controllers">
+        <ProjectItem ReplaceParameters="true" OpenInEditor="true">HomeController.cs</ProjectItem>
       </Folder>
       <Folder Name="Models">
       </Folder>
       <Folder Name="Views">
+        <ProjectItem ReplaceParameters="true" OpenInEditor="true">web.config</ProjectItem>
+        <Folder Name="Home">
+          <ProjectItem ReplaceParameters="true" OpenInEditor="true">Index.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared">
+          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_ControlSidebar.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_Header.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" OpenInEditor="true">_Sidebar.cshtml</ProjectItem>
+        </Folder>
       </Folder>
     </Project>
   </TemplateContent>
