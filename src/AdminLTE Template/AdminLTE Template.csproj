@@ -72,21 +72,21 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AdminLTE Template.txt</LastGenOutput>
     </Content>
-    <Content Include="AdminLTE Template.txt">
+    <None Include="AdminLTE Template.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AdminLTE Template.tt</DependentUpon>
-    </Content>
+    </None>
     <Content Include="AdminLTE.ico" />
     <Content Include="ProjectTemplate.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ProjectTemplate.txt</LastGenOutput>
     </Content>
-    <Content Include="ProjectTemplate.txt">
+    <None Include="ProjectTemplate.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectTemplate.tt</DependentUpon>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -110,6 +110,12 @@ copy /Y "$(ProjectDir)AdminLTE Template.txt" "$(ProjectDir)AdminLTE Template.vst
 
 echo Updating csproj
 copy /Y "$(ProjectDir)ProjectTemplate.txt" "$(ProjectDir)ProjectTemplate.csproj"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>rem set projectdir=$(ProjectDir)
+rem set copyto=%25projectdir:src\AdminLTE Template\=%25src\AdminLTE Template Installer\ProjectTemplates\Web
+rem echo Copying build output to vsix project %25copyto%25
+rem copy /Y "$(TargetDir)ProjectTemplates\CSharp\1033\*.zip" "%25copyto%25"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

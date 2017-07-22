@@ -51,6 +51,9 @@
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
     </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
 <#
     const int startingIndentation = 1;
     var baseDir = Host.ResolvePath("");
@@ -70,11 +73,14 @@
     readonly string[] _filesToExclude =
     {
         "AdminLTE Template.tt",
+        "AdminLTE Template.txt",
         "AdminLTE Template.csproj",
         "AdminLTE Template.csproj.user",
         "AdminLTE Template.vstemplate",
         "AdminLTE.ico",
+        "AssemblyInfo.cs",
         "ProjectTemplate.tt",
+        "ProjectTemplate.txt",
         "ProjectTemplate.csproj"
     };
 

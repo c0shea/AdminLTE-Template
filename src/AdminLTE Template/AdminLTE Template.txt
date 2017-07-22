@@ -4,9 +4,9 @@
     <Name>AdminLTE Template</Name>
     <Description>A C# ASP.NET MVC Project Template for Visual Studio using the popular AdminLTE Bootstrap Template by Abdullah Almsaeed.</Description>
     <Icon>AdminLTE.ico</Icon>
-    <ProjectType>Web</ProjectType>
-    <ProjectSubType>CSharp</ProjectSubType>
-    <RequiredFrameworkVersion>3.5</RequiredFrameworkVersion>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Web</ProjectSubType>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
     <TemplateID>d5eb7a76-1c73-42c3-a230-f1df9755cd59</TemplateID>
     <CreateNewFolder>true</CreateNewFolder>

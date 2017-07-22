@@ -44,11 +44,9 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Content Include="AdminLTE Template.txt" />
-        <Content Include="ProjectTemplate.txt" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="AssemblyInfo.cs" />
         <Compile Include="App_Start\BundleConfig.cs" />
         <Compile Include="App_Start\RouteConfig.cs" />
     </ItemGroup>
