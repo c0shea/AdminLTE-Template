@@ -40,6 +40,7 @@
             Path.Combine(baseDir, "AdminLTE Template.csproj.user"),
             Path.Combine(baseDir, "AdminLTE Template.vstemplate"),
             Path.Combine(baseDir, "AdminLTE.ico"),
+            Path.Combine(baseDir, "packages.tt"),
             Path.Combine(baseDir, "ProjectTemplate.tt"),
             Path.Combine(baseDir, "ProjectTemplate.txt"),
             Path.Combine(baseDir, "ProjectTemplate.csproj")

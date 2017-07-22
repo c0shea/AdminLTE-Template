@@ -91,6 +91,7 @@
         "AdminLTE Template.csproj.user",
         "AdminLTE Template.vstemplate",
         "AdminLTE.ico",
+        "packages.tt",
         "ProjectTemplate.tt",
         "ProjectTemplate.txt",
         "ProjectTemplate.csproj",
