@@ -191,6 +191,7 @@
       </Folder>
       <Folder Name="Views">
         <ProjectItem ReplaceParameters="true">web.config</ProjectItem>
+        <ProjectItem ReplaceParameters="true">_ViewStart.cshtml</ProjectItem>
         <Folder Name="Home">
           <ProjectItem ReplaceParameters="true">Index.cshtml</ProjectItem>
         </Folder>

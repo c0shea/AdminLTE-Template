@@ -27,11 +27,11 @@
   <package id="Microsoft.AspNet.Razor" version="3.2.3" targetFramework="<#=netfx.Value#>" />
   <package id="Microsoft.AspNet.Web.Optimization" version="1.1.3" targetFramework="<#=netfx.Value#>" />
   <package id="Microsoft.AspNet.WebPages" version="3.2.3" targetFramework="<#=netfx.Value#>" />
-  <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="1.0.3" targetFramework="<#=netfx.Value#>" />
-  <package id="Microsoft.Net.Compilers" version="1.3.2" targetFramework="<#=netfx.Value#>" developmentDependency="true" />
+  <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="1.0.5" targetFramework="<#=netfx.Value#>" />
+  <package id="Microsoft.Net.Compilers" version="2.3.1" targetFramework="<#=netfx.Value#>" developmentDependency="true" />
   <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="<#=netfx.Value#>" />
-  <package id="Newtonsoft.Json" version="9.0.1" targetFramework="<#=netfx.Value#>" />
-  <package id="RouteJs.Mvc5" version="2.1.0" targetFramework="<#=netfx.Value#>" />
+  <package id="Newtonsoft.Json" version="10.0.3" targetFramework="<#=netfx.Value#>" />
+  <package id="RouteJs.Mvc5" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebActivatorEx" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebGrease" version="1.6.0" targetFramework="<#=netfx.Value#>" />
   $endif$
