@@ -106,30 +106,28 @@
           <ProjectItem>glyphicons-halflings-regular.woff2</ProjectItem>
         </Folder>
         <Folder Name="img">
-          <Folder Name="img">
-            <ProjectItem>user.jpg</ProjectItem>
-            <Folder Name="icheck">
-              <ProjectItem>aero.png</ProjectItem>
-              <ProjectItem>aero@2x.png</ProjectItem>
-              <ProjectItem>blue.png</ProjectItem>
-              <ProjectItem>blue@2x.png</ProjectItem>
-              <ProjectItem>green.png</ProjectItem>
-              <ProjectItem>green@2x.png</ProjectItem>
-              <ProjectItem>grey.png</ProjectItem>
-              <ProjectItem>grey@2x.png</ProjectItem>
-              <ProjectItem>minimal.png</ProjectItem>
-              <ProjectItem>minimal@2x.png</ProjectItem>
-              <ProjectItem>orange.png</ProjectItem>
-              <ProjectItem>orange@2x.png</ProjectItem>
-              <ProjectItem>pink.png</ProjectItem>
-              <ProjectItem>pink@2x.png</ProjectItem>
-              <ProjectItem>purple.png</ProjectItem>
-              <ProjectItem>purple@2x.png</ProjectItem>
-              <ProjectItem>red.png</ProjectItem>
-              <ProjectItem>red@2x.png</ProjectItem>
-              <ProjectItem>yellow.png</ProjectItem>
-              <ProjectItem>yellow@2x.png</ProjectItem>
-            </Folder>
+          <ProjectItem>user.jpg</ProjectItem>
+          <Folder Name="icheck">
+            <ProjectItem>aero.png</ProjectItem>
+            <ProjectItem>aero@2x.png</ProjectItem>
+            <ProjectItem>blue.png</ProjectItem>
+            <ProjectItem>blue@2x.png</ProjectItem>
+            <ProjectItem>green.png</ProjectItem>
+            <ProjectItem>green@2x.png</ProjectItem>
+            <ProjectItem>grey.png</ProjectItem>
+            <ProjectItem>grey@2x.png</ProjectItem>
+            <ProjectItem>minimal.png</ProjectItem>
+            <ProjectItem>minimal@2x.png</ProjectItem>
+            <ProjectItem>orange.png</ProjectItem>
+            <ProjectItem>orange@2x.png</ProjectItem>
+            <ProjectItem>pink.png</ProjectItem>
+            <ProjectItem>pink@2x.png</ProjectItem>
+            <ProjectItem>purple.png</ProjectItem>
+            <ProjectItem>purple@2x.png</ProjectItem>
+            <ProjectItem>red.png</ProjectItem>
+            <ProjectItem>red@2x.png</ProjectItem>
+            <ProjectItem>yellow.png</ProjectItem>
+            <ProjectItem>yellow@2x.png</ProjectItem>
           </Folder>
         </Folder>
         <Folder Name="js">
