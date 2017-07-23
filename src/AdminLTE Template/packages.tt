@@ -20,7 +20,7 @@
 
     foreach (var netfx in frameworkVersions)
     {
-        #>
+#>
   $if$ ($targetframeworkversion$ == <#=netfx.Key#>)
   <package id="Antlr" version="3.5.0.2" targetFramework="<#=netfx.Value#>" />
   <package id="Microsoft.AspNet.Mvc" version="5.2.3" targetFramework="<#=netfx.Value#>" />
@@ -35,7 +35,7 @@
   <package id="WebActivatorEx" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebGrease" version="1.6.0" targetFramework="<#=netfx.Value#>" />
   $endif$
-        <#
+<#
     }
 #>
 </packages>
