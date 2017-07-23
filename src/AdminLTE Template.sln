@@ -8,8 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE Template Old", "AdminLTE Template Old\AdminLTE Template Old.csproj", "{CEA19F6D-7B4F-4547-B52D-B33D34CFE5F6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE Template", "AdminLTE Template\AdminLTE Template.csproj", "{3A94D963-E682-4006-A2EB-8D20B5571EF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE Template Installer", "AdminLTE Template Installer\AdminLTE Template Installer.csproj", "{AEE9421A-CC53-4BAA-8CE7-AD7E60A96B4F}"
@@ -23,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CEA19F6D-7B4F-4547-B52D-B33D34CFE5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEA19F6D-7B4F-4547-B52D-B33D34CFE5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEA19F6D-7B4F-4547-B52D-B33D34CFE5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEA19F6D-7B4F-4547-B52D-B33D34CFE5F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A94D963-E682-4006-A2EB-8D20B5571EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A94D963-E682-4006-A2EB-8D20B5571EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A94D963-E682-4006-A2EB-8D20B5571EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
