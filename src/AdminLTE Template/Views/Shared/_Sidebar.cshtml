@@ -1,4 +1,4 @@
-﻿@using $safeprojectname$.Controllers
+﻿@using WebHelpers.Mvc5
 <aside class="main-sidebar">
     <section class="sidebar">
         @* BEGIN Search *@
@@ -16,11 +16,11 @@
         @* BEGIN Menu *@
         <ul class="sidebar-menu">
             <li class="header">HEADER</li>
-            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == nameof(HomeController.Index) ? "active" : "")">
+            <li class="@Url.IsLinkActive("Index", "Home")">
                 <a href="@Url.Action("Index", "Home")"><i class="fa fa-link"></i> <span>Home</span></a>
             </li>
-            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == nameof(HomeController.AnotherLink) ? "active" : "")">
-                <a href="@Url.Action("Index", "Home")"><i class="fa fa-link"></i> <span>Another Link</span></a>
+            <li class="@Url.IsLinkActive("AnotherLink", "Home")">
+                <a href="@Url.Action("AnotherLink", "Home")"><i class="fa fa-link"></i> <span>Another Link</span></a>
             </li>
             <li class="treeview">
                 <a href="#">

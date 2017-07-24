@@ -32,14 +32,9 @@
         <Folder Name="css">
           <ProjectItem>AdminLTE.css</ProjectItem>
           <ProjectItem>AdminLTE.min.css</ProjectItem>
-          <ProjectItem>bootstrap.css</ProjectItem>
-          <ProjectItem>bootstrap.css.map</ProjectItem>
           <ProjectItem>bootstrap.min.css</ProjectItem>
-          <ProjectItem>bootstrap.min.css.map</ProjectItem>
           <ProjectItem>datepicker3.css</ProjectItem>
-          <ProjectItem>font-awesome.css</ProjectItem>
           <ProjectItem>font-awesome.min.css</ProjectItem>
-          <ProjectItem>select2.css</ProjectItem>
           <ProjectItem>select2.min.css</ProjectItem>
           <Folder Name="icheck">
             <ProjectItem>aero.css</ProjectItem>

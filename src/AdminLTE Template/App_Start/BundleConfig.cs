@@ -1,4 +1,5 @@
 ﻿using System.Web.Optimization;
+using WebHelpers.Mvc5;
 
 namespace $safeprojectname$.App_Start
 {
@@ -7,10 +8,12 @@ namespace $safeprojectname$.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new StyleBundle("~/Bundles/css")
-                .Include("~/Content/css/bootstrap.css")
-                .Include("~/Content/css/select2.css")
+                .Include("~/Content/css/bootstrap.min.css", new CssRewriteUrlTransformAbsolute())
+                .Include("~/Content/css/select2.min.css")
                 .Include("~/Content/css/datepicker3.css")
-                .Include("~/Content/css/AdminLTE.css")
+                .Include("~/Content/css/font-awesome.min.css", new CssRewriteUrlTransformAbsolute())
+                .Include("~/Content/css/icheck/blue.min.css", new CssRewriteUrlTransformAbsolute())
+                .Include("~/Content/css/AdminLTE.css", new CssRewriteUrlTransformAbsolute())
                 .Include("~/Content/css/skins/skin-blue.css"));
 
             bundles.Add(new ScriptBundle("~/Bundles/js")

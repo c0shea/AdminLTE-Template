@@ -112,6 +112,9 @@
             <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
             <Private>True</Private>
         </Reference>
+        <Reference Include="WebHelpers.Mvc5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <HintPath>..\packages\WebHelpers.Mvc5.1.0.0\lib\net45\WebHelpers.Mvc5.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Content Include="Global.asax" />

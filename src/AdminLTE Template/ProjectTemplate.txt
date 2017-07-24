@@ -104,6 +104,9 @@
             <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
             <Private>True</Private>
         </Reference>
+        <Reference Include="WebHelpers.Mvc5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <HintPath>..\packages\WebHelpers.Mvc5.1.0.0\lib\net45\WebHelpers.Mvc5.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Content Include="Global.asax" />
@@ -125,14 +128,9 @@
         <Content Include="packages.config" />
         <Content Include="Content\css\AdminLTE.css" />
         <Content Include="Content\css\AdminLTE.min.css" />
-        <Content Include="Content\css\bootstrap.css" />
-        <Content Include="Content\css\bootstrap.css.map" />
         <Content Include="Content\css\bootstrap.min.css" />
-        <Content Include="Content\css\bootstrap.min.css.map" />
         <Content Include="Content\css\datepicker3.css" />
-        <Content Include="Content\css\font-awesome.css" />
         <Content Include="Content\css\font-awesome.min.css" />
-        <Content Include="Content\css\select2.css" />
         <Content Include="Content\css\select2.min.css" />
         <Content Include="Content\css\icheck\aero.css" />
         <Content Include="Content\css\icheck\aero.min.css" />
