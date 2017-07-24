@@ -128,8 +128,8 @@
         <Content Include="packages.config" />
         <Content Include="Content\css\AdminLTE.css" />
         <Content Include="Content\css\AdminLTE.min.css" />
+        <Content Include="Content\css\bootstrap-datepicker3.min.css" />
         <Content Include="Content\css\bootstrap.min.css" />
-        <Content Include="Content\css\datepicker3.css" />
         <Content Include="Content\css\font-awesome.min.css" />
         <Content Include="Content\css\select2.min.css" />
         <Content Include="Content\css\icheck\aero.css" />
@@ -216,6 +216,7 @@
         <Content Include="Content\js\plugins\bootstrap\bootstrap.js" />
         <Content Include="Content\js\plugins\bootstrap\bootstrap.min.js" />
         <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.js" />
+        <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.min.js" />
         <Content Include="Content\js\plugins\fastclick\fastclick.js" />
         <Content Include="Content\js\plugins\fastclick\fastclick.min.js" />
         <Content Include="Content\js\plugins\icheck\icheck.js" />

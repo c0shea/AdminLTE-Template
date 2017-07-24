@@ -32,8 +32,8 @@
         <Folder Name="css">
           <ProjectItem>AdminLTE.css</ProjectItem>
           <ProjectItem>AdminLTE.min.css</ProjectItem>
+          <ProjectItem>bootstrap-datepicker3.min.css</ProjectItem>
           <ProjectItem>bootstrap.min.css</ProjectItem>
-          <ProjectItem>datepicker3.css</ProjectItem>
           <ProjectItem>font-awesome.min.css</ProjectItem>
           <ProjectItem>select2.min.css</ProjectItem>
           <Folder Name="icheck">
@@ -136,6 +136,7 @@
             </Folder>
             <Folder Name="datepicker">
               <ProjectItem>bootstrap-datepicker.js</ProjectItem>
+              <ProjectItem>bootstrap-datepicker.min.js</ProjectItem>
             </Folder>
             <Folder Name="fastclick">
               <ProjectItem>fastclick.js</ProjectItem>
