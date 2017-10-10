@@ -126,8 +126,7 @@
           </Folder>
         </Folder>
         <Folder Name="js">
-          <ProjectItem>app.js</ProjectItem>
-          <ProjectItem>app.min.js</ProjectItem>
+          <ProjectItem>adminlte.js</ProjectItem>
           <ProjectItem>init.js</ProjectItem>
           <Folder Name="plugins">
             <Folder Name="bootstrap">

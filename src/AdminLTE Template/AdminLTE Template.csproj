@@ -124,6 +124,7 @@
     </None>
     <None Include="Properties\AssemblyInfo.cs" />
     <None Include="Global.asax" />
+    <Content Include="Content\js\adminlte.js" />
     <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.min.js" />
     <Content Include="Content\js\plugins\moment\moment.js" />
     <Content Include="packages.tt">
@@ -191,8 +192,6 @@
     <Content Include="Content\img\icheck\yellow%402x.png" />
     <Content Include="Content\img\icheck\yellow.png" />
     <Content Include="Content\img\user.jpg" />
-    <Content Include="Content\js\app.js" />
-    <Content Include="Content\js\app.min.js" />
     <Content Include="Content\js\init.js" />
     <Content Include="Content\js\plugins\bootstrap\bootstrap.js" />
     <Content Include="Content\js\plugins\bootstrap\bootstrap.min.js" />

@@ -210,8 +210,7 @@
         <Content Include="Content\img\icheck\red@2x.png" />
         <Content Include="Content\img\icheck\yellow.png" />
         <Content Include="Content\img\icheck\yellow@2x.png" />
-        <Content Include="Content\js\app.js" />
-        <Content Include="Content\js\app.min.js" />
+        <Content Include="Content\js\adminlte.js" />
         <Content Include="Content\js\init.js" />
         <Content Include="Content\js\plugins\bootstrap\bootstrap.js" />
         <Content Include="Content\js\plugins\bootstrap\bootstrap.min.js" />
