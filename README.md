@@ -24,7 +24,7 @@ by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 | Fastclick | 1.0.6 | [GitHub](https://github.com/ftlabs/fastclick)
 | Font Awesome | 4.7.0 | [GitHub](https://github.com/FortAwesome/Font-Awesome)
 | iCheck | 1.0.1 | [GitHub](https://github.com/fronteed/iCheck/)
-| Inputmask | 3.3.8 | [GitHub](http://github.com/RobinHerbots/jquery.inputmask)
+| Inputmask | 3.3.11 | [GitHub](http://github.com/RobinHerbots/jquery.inputmask)
 | jQuery | 2.2.4 | [GitHub](https://github.com/jquery/jquery)
 | Moment.js | 2.18.1 | [GitHub](https://github.com/moment/moment/)
 | Select2 | 4.0.4 | [GitHub](https://github.com/select2/select2)
