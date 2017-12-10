@@ -59,6 +59,8 @@
     <Content Include="Content\css\AdminLTE.css" />
     <Content Include="Content\css\AdminLTE.min.css" />
     <Content Include="Content\css\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\css\bootstrap-select.css" />
+    <Content Include="Content\css\bootstrap-select.min.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\icheck\aero.css" />
@@ -81,7 +83,6 @@
     <Content Include="Content\css\icheck\red.min.css" />
     <Content Include="Content\css\icheck\yellow.css" />
     <Content Include="Content\css\icheck\yellow.min.css" />
-    <Content Include="Content\css\select2.min.css" />
     <Content Include="Content\css\skins\skin-black-light.css" />
     <Content Include="Content\css\skins\skin-black-light.min.css" />
     <Content Include="Content\css\skins\skin-black.css" />
@@ -125,6 +126,8 @@
     <None Include="Properties\AssemblyInfo.cs" />
     <None Include="Global.asax" />
     <Content Include="Content\js\adminlte.js" />
+    <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.js" />
+    <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.min.js" />
     <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.min.js" />
     <Content Include="Content\js\plugins\moment\moment.js" />
     <Content Include="packages.tt">
@@ -205,11 +208,6 @@
     <Content Include="Content\js\plugins\jquery\jquery-2.2.4.js" />
     <Content Include="Content\js\plugins\jquery\jquery-2.2.4.min.js" />
     <Content Include="Content\js\plugins\moment\moment.min.js" />
-    <Content Include="Content\js\plugins\select2\i18n\en.js" />
-    <Content Include="Content\js\plugins\select2\select2.full.js" />
-    <Content Include="Content\js\plugins\select2\select2.full.min.js" />
-    <Content Include="Content\js\plugins\select2\select2.js" />
-    <Content Include="Content\js\plugins\select2\select2.min.js" />
     <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.js" />
     <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.min.js" />
     <Content Include="Content\js\plugins\validator\validator.js" />

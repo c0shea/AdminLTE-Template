@@ -9,7 +9,7 @@ namespace $safeprojectname$.App_Start
         {
             bundles.Add(new StyleBundle("~/Bundles/css")
                 .Include("~/Content/css/bootstrap.min.css", new CssRewriteUrlTransformAbsolute())
-                .Include("~/Content/css/select2.min.css")
+                .Include("~/Content/css/bootstrap-select.css")
                 .Include("~/Content/css/bootstrap-datepicker3.min.css")
                 .Include("~/Content/css/font-awesome.min.css", new CssRewriteUrlTransformAbsolute())
                 .Include("~/Content/css/icheck/blue.min.css", new CssRewriteUrlTransformAbsolute())
@@ -21,7 +21,7 @@ namespace $safeprojectname$.App_Start
                 .Include("~/Content/js/plugins/bootstrap/bootstrap.js")
                 .Include("~/Content/js/plugins/fastclick/fastclick.js")
                 .Include("~/Content/js/plugins/slimscroll/jquery.slimscroll.js")
-                .Include("~/Content/js/plugins/select2/select2.full.js")
+                .Include("~/Content/js/plugins/bootstrap-select/bootstrap-select.js")
                 .Include("~/Content/js/plugins/moment/moment.js")
                 .Include("~/Content/js/plugins/datepicker/bootstrap-datepicker.js")
                 .Include("~/Content/js/plugins/icheck/icheck.js")
