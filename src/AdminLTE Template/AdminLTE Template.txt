@@ -33,9 +33,10 @@
           <ProjectItem>AdminLTE.css</ProjectItem>
           <ProjectItem>AdminLTE.min.css</ProjectItem>
           <ProjectItem>bootstrap-datepicker3.min.css</ProjectItem>
+          <ProjectItem>bootstrap-select.css</ProjectItem>
+          <ProjectItem>bootstrap-select.min.css</ProjectItem>
           <ProjectItem>bootstrap.min.css</ProjectItem>
           <ProjectItem>font-awesome.min.css</ProjectItem>
-          <ProjectItem>select2.min.css</ProjectItem>
           <Folder Name="icheck">
             <ProjectItem>aero.css</ProjectItem>
             <ProjectItem>aero.min.css</ProjectItem>
@@ -133,6 +134,10 @@
               <ProjectItem>bootstrap.js</ProjectItem>
               <ProjectItem>bootstrap.min.js</ProjectItem>
             </Folder>
+            <Folder Name="bootstrap-select">
+              <ProjectItem>bootstrap-select.js</ProjectItem>
+              <ProjectItem>bootstrap-select.min.js</ProjectItem>
+            </Folder>
             <Folder Name="datepicker">
               <ProjectItem>bootstrap-datepicker.js</ProjectItem>
               <ProjectItem>bootstrap-datepicker.min.js</ProjectItem>
@@ -156,63 +161,6 @@
             <Folder Name="moment">
               <ProjectItem>moment.js</ProjectItem>
               <ProjectItem>moment.min.js</ProjectItem>
-            </Folder>
-            <Folder Name="select2">
-              <ProjectItem>select2.full.js</ProjectItem>
-              <ProjectItem>select2.full.min.js</ProjectItem>
-              <ProjectItem>select2.js</ProjectItem>
-              <ProjectItem>select2.min.js</ProjectItem>
-              <Folder Name="i18n">
-                <ProjectItem>ar.js</ProjectItem>
-                <ProjectItem>az.js</ProjectItem>
-                <ProjectItem>bg.js</ProjectItem>
-                <ProjectItem>ca.js</ProjectItem>
-                <ProjectItem>cs.js</ProjectItem>
-                <ProjectItem>da.js</ProjectItem>
-                <ProjectItem>de.js</ProjectItem>
-                <ProjectItem>el.js</ProjectItem>
-                <ProjectItem>en.js</ProjectItem>
-                <ProjectItem>es.js</ProjectItem>
-                <ProjectItem>et.js</ProjectItem>
-                <ProjectItem>eu.js</ProjectItem>
-                <ProjectItem>fa.js</ProjectItem>
-                <ProjectItem>fi.js</ProjectItem>
-                <ProjectItem>fr.js</ProjectItem>
-                <ProjectItem>gl.js</ProjectItem>
-                <ProjectItem>he.js</ProjectItem>
-                <ProjectItem>hi.js</ProjectItem>
-                <ProjectItem>hr.js</ProjectItem>
-                <ProjectItem>hu.js</ProjectItem>
-                <ProjectItem>hy.js</ProjectItem>
-                <ProjectItem>id.js</ProjectItem>
-                <ProjectItem>is.js</ProjectItem>
-                <ProjectItem>it.js</ProjectItem>
-                <ProjectItem>ja.js</ProjectItem>
-                <ProjectItem>km.js</ProjectItem>
-                <ProjectItem>ko.js</ProjectItem>
-                <ProjectItem>lt.js</ProjectItem>
-                <ProjectItem>lv.js</ProjectItem>
-                <ProjectItem>mk.js</ProjectItem>
-                <ProjectItem>ms.js</ProjectItem>
-                <ProjectItem>nb.js</ProjectItem>
-                <ProjectItem>nl.js</ProjectItem>
-                <ProjectItem>pl.js</ProjectItem>
-                <ProjectItem>pt-BR.js</ProjectItem>
-                <ProjectItem>pt.js</ProjectItem>
-                <ProjectItem>ro.js</ProjectItem>
-                <ProjectItem>ru.js</ProjectItem>
-                <ProjectItem>sk.js</ProjectItem>
-                <ProjectItem>sl.js</ProjectItem>
-                <ProjectItem>sr-Cyrl.js</ProjectItem>
-                <ProjectItem>sr.js</ProjectItem>
-                <ProjectItem>sv.js</ProjectItem>
-                <ProjectItem>th.js</ProjectItem>
-                <ProjectItem>tr.js</ProjectItem>
-                <ProjectItem>uk.js</ProjectItem>
-                <ProjectItem>vi.js</ProjectItem>
-                <ProjectItem>zh-CN.js</ProjectItem>
-                <ProjectItem>zh-TW.js</ProjectItem>
-              </Folder>
             </Folder>
             <Folder Name="slimscroll">
               <ProjectItem>jquery.slimscroll.js</ProjectItem>
