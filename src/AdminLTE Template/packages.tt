@@ -34,7 +34,7 @@
   <package id="RouteJs.Mvc5" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebActivatorEx" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebGrease" version="1.6.0" targetFramework="<#=netfx.Value#>" />
-  <package id="WebHelpers.Mvc5" version="1.0.0" targetFramework="<#=netfx.Value#>" />
+  <package id="WebHelpers.Mvc5" version="1.2.0" targetFramework="<#=netfx.Value#>" />
   $endif$
 <#
     }
