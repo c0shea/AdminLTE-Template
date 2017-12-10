@@ -26,7 +26,7 @@ by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 | iCheck | 1.0.1 | [GitHub](https://github.com/fronteed/iCheck/)
 | Inputmask | 3.3.11 | [GitHub](http://github.com/RobinHerbots/jquery.inputmask)
 | jQuery | 2.2.4 | [GitHub](https://github.com/jquery/jquery)
-| Moment.js | 2.18.1 | [GitHub](https://github.com/moment/moment/)
+| Moment.js | 2.19.3 | [GitHub](https://github.com/moment/moment/)
 | Select2 | 4.0.4 | [GitHub](https://github.com/select2/select2)
 | slimScroll | 1.3.8 | [GitHub](https://github.com/rochal/jQuery-slimScroll)
 | WebHelpers.Mvc5 | 1.0.0 | [GitHub](https://github.com/c0shea/WebHelpers.Mvc5)
