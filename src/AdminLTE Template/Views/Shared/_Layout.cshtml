@@ -1,11 +1,13 @@
 ﻿@using System.Web.Optimization
+@using WebHelpers.Mvc5.Enum
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-        @if (!string.IsNullOrWhiteSpace(ViewBag.Title)) {
+        @if (!string.IsNullOrWhiteSpace(ViewBag.Title))
+        {
             @ViewBag.Title@: -
         }
         AdminLTE
