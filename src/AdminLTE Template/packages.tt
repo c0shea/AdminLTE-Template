@@ -15,7 +15,8 @@
         {"4.6", "net46"},
         {"4.6.1", "net461"},
         {"4.6.2", "net462"},
-        {"4.7", "net47"}
+        {"4.7", "net47"},
+        {"4.7.1", "net471"}
     };
 
     foreach (var netfx in frameworkVersions)
@@ -27,8 +28,8 @@
   <package id="Microsoft.AspNet.Razor" version="3.2.3" targetFramework="<#=netfx.Value#>" />
   <package id="Microsoft.AspNet.Web.Optimization" version="1.1.3" targetFramework="<#=netfx.Value#>" />
   <package id="Microsoft.AspNet.WebPages" version="3.2.3" targetFramework="<#=netfx.Value#>" />
-  <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="1.0.5" targetFramework="<#=netfx.Value#>" />
-  <package id="Microsoft.Net.Compilers" version="2.3.1" targetFramework="<#=netfx.Value#>" developmentDependency="true" />
+  <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="1.0.8" targetFramework="<#=netfx.Value#>" />
+  <package id="Microsoft.Net.Compilers" version="2.6.0" targetFramework="<#=netfx.Value#>" developmentDependency="true" />
   <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="<#=netfx.Value#>" />
   <package id="Newtonsoft.Json" version="10.0.3" targetFramework="<#=netfx.Value#>" />
   <package id="RouteJs.Mvc5" version="2.2.0" targetFramework="<#=netfx.Value#>" />
