@@ -174,6 +174,7 @@
         </Folder>
       </Folder>
       <Folder Name="Controllers">
+        <ProjectItem ReplaceParameters="true">ErrorController.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true">HomeController.cs</ProjectItem>
       </Folder>
       <Folder Name="Models">
@@ -181,6 +182,10 @@
       <Folder Name="Views">
         <ProjectItem ReplaceParameters="true">web.config</ProjectItem>
         <ProjectItem ReplaceParameters="true">_ViewStart.cshtml</ProjectItem>
+        <Folder Name="Error">
+          <ProjectItem ReplaceParameters="true">InternalServerError.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true">NotFound.cshtml</ProjectItem>
+        </Folder>
         <Folder Name="Home">
           <ProjectItem ReplaceParameters="true">Index.cshtml</ProjectItem>
         </Folder>

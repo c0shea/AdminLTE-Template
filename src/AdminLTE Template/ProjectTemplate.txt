@@ -235,6 +235,8 @@
         <Content Include="Content\js\plugins\validator\validator.min.js" />
         <Content Include="Views\web.config" />
         <Content Include="Views\_ViewStart.cshtml" />
+        <Content Include="Views\Error\InternalServerError.cshtml" />
+        <Content Include="Views\Error\NotFound.cshtml" />
         <Content Include="Views\Home\Index.cshtml" />
         <Content Include="Views\Shared\_ControlSidebar.cshtml" />
         <Content Include="Views\Shared\_Header.cshtml" />
@@ -244,6 +246,7 @@
     <ItemGroup>
         <Compile Include="App_Start\BundleConfig.cs" />
         <Compile Include="App_Start\RouteConfig.cs" />
+        <Compile Include="Controllers\ErrorController.cs" />
         <Compile Include="Controllers\HomeController.cs" />
     </ItemGroup>
     <ItemGroup>
