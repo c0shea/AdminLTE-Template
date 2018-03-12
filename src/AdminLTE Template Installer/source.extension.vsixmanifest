@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="TemplatePackage.Connor O'Shea.945572d8-ea94-41dd-99f9-bfe94e941972" Version="4.0.0" Language="en-US" Publisher="Connor O'Shea" />
+        <Identity Id="TemplatePackage.Connor O'Shea.945572d8-ea94-41dd-99f9-bfe94e941972" Version="4.1.0" Language="en-US" Publisher="Connor O'Shea" />
         <DisplayName>AdminLTE Template</DisplayName>
         <Description xml:space="preserve">A C# ASP.NET MVC Project Template for Visual Studio using the popular AdminLTE Bootstrap Template by Abdullah Almsaeed.</Description>
         <MoreInfo>https://github.com/c0shea/AdminLTE-Template</MoreInfo>
