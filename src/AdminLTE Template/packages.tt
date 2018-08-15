@@ -16,7 +16,8 @@
         {"4.6.1", "net461"},
         {"4.6.2", "net462"},
         {"4.7", "net47"},
-        {"4.7.1", "net471"}
+        {"4.7.1", "net471"},
+        {"4.7.2", "net472"}
     };
 
     foreach (var netfx in frameworkVersions)
@@ -35,7 +36,7 @@
   <package id="RouteJs.Mvc5" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebActivatorEx" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebGrease" version="1.6.0" targetFramework="<#=netfx.Value#>" />
-  <package id="WebHelpers.Mvc5" version="1.2.0" targetFramework="<#=netfx.Value#>" />
+  <package id="WebHelpers.Mvc5" version="2.0.0" targetFramework="<#=netfx.Value#>" />
   $endif$
 <#
     }
