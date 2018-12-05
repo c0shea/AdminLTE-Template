@@ -17,7 +17,8 @@
         {"4.6.2", "net462"},
         {"4.7", "net47"},
         {"4.7.1", "net471"},
-        {"4.7.2", "net472"}
+        {"4.7.2", "net472"},
+        {"4.8", "net48"}
     };
 
     foreach (var netfx in frameworkVersions)
