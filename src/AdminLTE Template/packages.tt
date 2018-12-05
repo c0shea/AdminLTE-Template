@@ -33,7 +33,7 @@
   <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="1.0.8" targetFramework="<#=netfx.Value#>" />
   <package id="Microsoft.Net.Compilers" version="2.7.0" targetFramework="<#=netfx.Value#>" developmentDependency="true" />
   <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="<#=netfx.Value#>" />
-  <package id="Newtonsoft.Json" version="11.0.1" targetFramework="<#=netfx.Value#>" />
+  <package id="Newtonsoft.Json" version="11.0.2" targetFramework="<#=netfx.Value#>" />
   <package id="RouteJs.Mvc5" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebActivatorEx" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebGrease" version="1.6.0" targetFramework="<#=netfx.Value#>" />
