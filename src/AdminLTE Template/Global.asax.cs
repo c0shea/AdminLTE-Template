@@ -52,5 +52,5 @@ namespace $safeprojectname$
                 ((IController)controller).Execute(new RequestContext(new HttpContextWrapper(httpContext), routeData));
             }
         }
-}
+    }
 }
