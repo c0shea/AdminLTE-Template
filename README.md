@@ -17,7 +17,7 @@ by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 ## Included Dependencies
 | NAME | VERSION | REPO |
 | :--- | :---: | :---: |
-| AdminLTE | 2.4.3 | [GitHub](https://github.com/almasaeed2010/AdminLTE/)
+| AdminLTE | 2.4.9 | [GitHub](https://github.com/almasaeed2010/AdminLTE/)
 | Bootstrap | 3.3.7 | [GitHub](https://github.com/twbs/bootstrap)
 | Bootstrap Datepicker | 1.7.1 | [GitHub](https://github.com/uxsolutions/bootstrap-datepicker)
 | Bootstrap Select | 1.13.0-alpha | [GitHub](https://github.com/silviomoreto/bootstrap-select)
