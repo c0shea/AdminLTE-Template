@@ -19,7 +19,7 @@ by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 | :--- | :---: | :---: |
 | AdminLTE | 2.4.9 | [GitHub](https://github.com/almasaeed2010/AdminLTE/)
 | Bootstrap | 3.4.1 | [GitHub](https://github.com/twbs/bootstrap)
-| Bootstrap Datepicker | 1.7.1 | [GitHub](https://github.com/uxsolutions/bootstrap-datepicker)
+| Bootstrap Datepicker | 1.8.0 | [GitHub](https://github.com/uxsolutions/bootstrap-datepicker)
 | Bootstrap Select | 1.13.0-alpha | [GitHub](https://github.com/silviomoreto/bootstrap-select)
 | Bootstrap Validator | 0.11.9 | [GitHub](https://github.com/1000hz/bootstrap-validator)
 | Fastclick | 1.0.6 | [GitHub](https://github.com/ftlabs/fastclick)
