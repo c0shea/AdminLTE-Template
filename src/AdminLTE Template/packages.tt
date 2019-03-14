@@ -34,6 +34,7 @@
   <package id="Microsoft.Net.Compilers" version="2.10.0" targetFramework="<#=netfx.Value#>" developmentDependency="true" />
   <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="<#=netfx.Value#>" />
   <package id="Newtonsoft.Json" version="12.0.1" targetFramework="<#=netfx.Value#>" />
+  <package id="NLog" version="4.5.11" targetFramework="<#=netfx.Value#>" />
   <package id="RouteJs.Mvc5" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebActivatorEx" version="2.2.0" targetFramework="<#=netfx.Value#>" />
   <package id="WebGrease" version="1.6.0" targetFramework="<#=netfx.Value#>" />
