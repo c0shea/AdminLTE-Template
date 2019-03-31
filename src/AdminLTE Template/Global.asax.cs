@@ -6,21 +6,35 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using $safeprojectname$.App_Start;
 using $safeprojectname$.Controllers;
+using NLog;
 
 namespace $safeprojectname$
 {
     public class MvcApplication : HttpApplication
     {
+        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
+
         protected void Application_Start()
         {
+            Log.Info("Starting up...");
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Log.Info("Routes and bundles registered");
+            Log.Info("Started");
+        }
+
+        protected void Application_End()
+        {
+            Log.Info("Stopped");
         }
 
         protected void Application_Error(object sender, EventArgs e)
         {
             var exception = Server.GetLastError();
+            Log.Error(exception, "Unhandled application exception");
+
             var httpContext = ((HttpApplication)sender).Context;
             httpContext.Response.Clear();
             httpContext.ClearError();
