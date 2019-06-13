@@ -54,11 +54,11 @@ namespace $safeprojectname$
 
             if (exception != null && exception.GetHttpCode() == (int)HttpStatusCode.NotFound)
             {
-                routeData.Values["action"] = "NotFound";
+                routeData.Values["action"] = nameof(ErrorController.NotFound);
             }
             else
             {
-                routeData.Values["action"] = "InternalServerError";
+                routeData.Values["action"] = nameof(ErrorController.InternalServerError);
             }
 
             using (Controller controller = new ErrorController())
