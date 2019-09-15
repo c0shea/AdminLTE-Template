@@ -6,7 +6,7 @@ The template also includes other useful plugins.
 This template aims to make development faster and easier since the basic structure of all the
 dependencies is already defined.
 
-[AdminLTE](https://github.com/almasaeed2010/AdminLTE) was created and is maintained
+[AdminLTE](https://github.com/ColorlibHQ/AdminLTE) was created and is maintained
 by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 
 ![Preview Screenshot](https://raw.githubusercontent.com/c0shea/AdminLTE-Template/master/src/AdminLTE%20Template%20Installer/AdminLTE%20Preview.png)
