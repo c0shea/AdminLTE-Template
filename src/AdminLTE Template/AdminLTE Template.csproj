@@ -120,6 +120,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Content\css\bootstrap-datepicker3.css.map" />
+    <None Include="Content\js\plugins\jquery\jquery-3.4.1.min.map" />
     <None Include="packages.config">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -131,8 +132,8 @@
     <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.js" />
     <Content Include="Content\js\plugins\bootstrap-select\bootstrap-select.min.js" />
     <Content Include="Content\js\plugins\datepicker\bootstrap-datepicker.min.js" />
-    <Content Include="Content\js\plugins\jquery\jquery-3.3.1.js" />
-    <Content Include="Content\js\plugins\jquery\jquery-3.3.1.min.js" />
+    <Content Include="Content\js\plugins\jquery\jquery-3.4.1.js" />
+    <Content Include="Content\js\plugins\jquery\jquery-3.4.1.min.js" />
     <Content Include="Content\js\plugins\moment\moment.js" />
     <Content Include="packages.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -155,8 +155,9 @@
               <ProjectItem>jquery.inputmask.bundle.min.js</ProjectItem>
             </Folder>
             <Folder Name="jquery">
-              <ProjectItem>jquery-3.3.1.js</ProjectItem>
-              <ProjectItem>jquery-3.3.1.min.js</ProjectItem>
+              <ProjectItem>jquery-3.4.1.js</ProjectItem>
+              <ProjectItem>jquery-3.4.1.min.js</ProjectItem>
+              <ProjectItem>jquery-3.4.1.min.map</ProjectItem>
             </Folder>
             <Folder Name="moment">
               <ProjectItem>moment.js</ProjectItem>

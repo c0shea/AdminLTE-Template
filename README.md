@@ -26,7 +26,7 @@ by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 | Font Awesome | 4.7.0 | [GitHub](https://github.com/FortAwesome/Font-Awesome)
 | iCheck | 1.0.1 | [GitHub](https://github.com/fronteed/iCheck/)
 | Inputmask | 3.3.11 | [GitHub](http://github.com/RobinHerbots/jquery.inputmask)
-| jQuery | 3.3.1 | [GitHub](https://github.com/jquery/jquery)
+| jQuery | 3.4.1 | [GitHub](https://github.com/jquery/jquery)
 | Moment.js | 2.24.0 | [GitHub](https://github.com/moment/moment/)
 | slimScroll | 1.3.8 | [GitHub](https://github.com/rochal/jQuery-slimScroll)
 | WebHelpers.Mvc5 | 2.0.0 | [GitHub](https://github.com/c0shea/WebHelpers.Mvc5)

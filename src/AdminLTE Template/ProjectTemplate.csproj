@@ -238,8 +238,9 @@
         <Content Include="Content\js\plugins\icheck\icheck.min.js" />
         <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.js" />
         <Content Include="Content\js\plugins\inputmask\jquery.inputmask.bundle.min.js" />
-        <Content Include="Content\js\plugins\jquery\jquery-3.3.1.js" />
-        <Content Include="Content\js\plugins\jquery\jquery-3.3.1.min.js" />
+        <Content Include="Content\js\plugins\jquery\jquery-3.4.1.js" />
+        <Content Include="Content\js\plugins\jquery\jquery-3.4.1.min.js" />
+        <Content Include="Content\js\plugins\jquery\jquery-3.4.1.min.map" />
         <Content Include="Content\js\plugins\moment\moment.js" />
         <Content Include="Content\js\plugins\moment\moment.min.js" />
         <Content Include="Content\js\plugins\slimscroll\jquery.slimscroll.js" />
