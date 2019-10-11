@@ -246,8 +246,8 @@
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup>
     <PreBuildEvent>echo Transforming all T4 templates...
-"%25COMMONPROGRAMFILES(x86)%25\Microsoft Shared\TextTemplating\14.0\TextTransform.exe" -out "$(ProjectDir)AdminLTE Template.txt" "$(ProjectDir)AdminLTE Template.tt"
-"%25COMMONPROGRAMFILES(x86)%25\Microsoft Shared\TextTemplating\14.0\TextTransform.exe" -out "$(ProjectDir)ProjectTemplate.txt" "$(ProjectDir)ProjectTemplate.tt"
+"$(DevEnvDir)TextTransform.exe" -out "$(ProjectDir)AdminLTE Template.txt" "$(ProjectDir)AdminLTE Template.tt"
+"$(DevEnvDir)TextTransform.exe" -out "$(ProjectDir)ProjectTemplate.txt" "$(ProjectDir)ProjectTemplate.tt"
 
 echo Updating vstemplate
 copy /Y "$(ProjectDir)AdminLTE Template.txt" "$(ProjectDir)AdminLTE Template.vstemplate"

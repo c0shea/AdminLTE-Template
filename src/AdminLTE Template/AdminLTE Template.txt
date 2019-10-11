@@ -22,8 +22,6 @@
       <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
       <ProjectItem ReplaceParameters="true">Web.Debug.config</ProjectItem>
       <ProjectItem ReplaceParameters="true">Web.Release.config</ProjectItem>
-      <Folder Name="App_Data">
-      </Folder>
       <Folder Name="App_Start">
         <ProjectItem ReplaceParameters="true">BundleConfig.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true">RouteConfig.cs</ProjectItem>
@@ -32,6 +30,8 @@
         <Folder Name="css">
           <ProjectItem>AdminLTE.css</ProjectItem>
           <ProjectItem>AdminLTE.min.css</ProjectItem>
+          <ProjectItem>bootstrap-datepicker3.css</ProjectItem>
+          <ProjectItem>bootstrap-datepicker3.css.map</ProjectItem>
           <ProjectItem>bootstrap-datepicker3.min.css</ProjectItem>
           <ProjectItem>bootstrap-select.css</ProjectItem>
           <ProjectItem>bootstrap-select.min.css</ProjectItem>
@@ -177,8 +177,6 @@
         <ProjectItem ReplaceParameters="true">ErrorController.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true">HomeController.cs</ProjectItem>
       </Folder>
-      <Folder Name="Models">
-      </Folder>
       <Folder Name="Views">
         <ProjectItem ReplaceParameters="true">web.config</ProjectItem>
         <ProjectItem ReplaceParameters="true">_ViewStart.cshtml</ProjectItem>
@@ -195,6 +193,8 @@
           <ProjectItem ReplaceParameters="true">_Layout.cshtml</ProjectItem>
           <ProjectItem ReplaceParameters="true">_Sidebar.cshtml</ProjectItem>
         </Folder>
+      </Folder>
+      <Folder Name="Models">
       </Folder>
     </Project>
   </TemplateContent>

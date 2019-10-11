@@ -26,6 +26,8 @@
     const int startingIndentation = 3;
     ProcessDirectory(Host.ResolvePath(""), startingIndentation);
 #>
+      <Folder Name="Models">
+      </Folder>
     </Project>
   </TemplateContent>
 </VSTemplate>
