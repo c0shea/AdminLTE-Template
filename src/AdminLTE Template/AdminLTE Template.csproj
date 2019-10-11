@@ -58,6 +58,7 @@
     <None Include="App_Start\RouteConfig.cs" />
     <Content Include="Content\css\AdminLTE.css" />
     <Content Include="Content\css\AdminLTE.min.css" />
+    <Content Include="Content\css\bootstrap-datepicker3.css" />
     <Content Include="Content\css\bootstrap-datepicker3.min.css" />
     <Content Include="Content\css\bootstrap-select.css" />
     <Content Include="Content\css\bootstrap-select.min.css" />
@@ -118,6 +119,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\css\bootstrap-datepicker3.css.map" />
     <None Include="packages.config">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

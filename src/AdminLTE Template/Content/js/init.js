@@ -1,6 +1,9 @@
 ﻿$(function () {
     $(".datepicker").datepicker({
-        autoclose: true
+        todayHighlight: true,
+        autoclose: true,
+        todayBtn: true,
+        zIndexOffset: 9999999 // Always show above navbar
     });
 
     $('input[type="checkbox"], input[type="radio"]').iCheck({

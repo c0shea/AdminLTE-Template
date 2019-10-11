@@ -139,6 +139,8 @@
         <Content Include="packages.config" />
         <Content Include="Content\css\AdminLTE.css" />
         <Content Include="Content\css\AdminLTE.min.css" />
+        <Content Include="Content\css\bootstrap-datepicker3.css" />
+        <Content Include="Content\css\bootstrap-datepicker3.css.map" />
         <Content Include="Content\css\bootstrap-datepicker3.min.css" />
         <Content Include="Content\css\bootstrap-select.css" />
         <Content Include="Content\css\bootstrap-select.min.css" />
@@ -261,8 +263,6 @@
         <Compile Include="Controllers\HomeController.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Folder Include="App_Data\" />
-        <Folder Include="Models\" />
     </ItemGroup>
     <PropertyGroup>
         <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
