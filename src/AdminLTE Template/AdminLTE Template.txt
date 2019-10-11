@@ -34,6 +34,7 @@
           <ProjectItem>bootstrap-datepicker3.css.map</ProjectItem>
           <ProjectItem>bootstrap-datepicker3.min.css</ProjectItem>
           <ProjectItem>bootstrap-select.css</ProjectItem>
+          <ProjectItem>bootstrap-select.css.map</ProjectItem>
           <ProjectItem>bootstrap-select.min.css</ProjectItem>
           <ProjectItem>bootstrap.min.css</ProjectItem>
           <ProjectItem>font-awesome.min.css</ProjectItem>
@@ -136,6 +137,7 @@
             </Folder>
             <Folder Name="bootstrap-select">
               <ProjectItem>bootstrap-select.js</ProjectItem>
+              <ProjectItem>bootstrap-select.js.map</ProjectItem>
               <ProjectItem>bootstrap-select.min.js</ProjectItem>
             </Folder>
             <Folder Name="datepicker">

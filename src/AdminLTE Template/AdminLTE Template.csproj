@@ -120,6 +120,8 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Content\css\bootstrap-datepicker3.css.map" />
+    <None Include="Content\css\bootstrap-select.css.map" />
+    <None Include="Content\js\plugins\bootstrap-select\bootstrap-select.js.map" />
     <None Include="Content\js\plugins\jquery\jquery-3.4.1.min.map" />
     <None Include="packages.config">
       <AutoGen>True</AutoGen>
