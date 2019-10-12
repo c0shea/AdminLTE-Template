@@ -29,4 +29,4 @@ by [Abdullah Almsaeed](https://almsaeedstudio.com/).
 | jQuery | 3.4.1 | [GitHub](https://github.com/jquery/jquery)
 | Moment.js | 2.24.0 | [GitHub](https://github.com/moment/moment/)
 | slimScroll | 1.3.8 | [GitHub](https://github.com/rochal/jQuery-slimScroll)
-| WebHelpers.Mvc5 | 2.0.0 | [GitHub](https://github.com/c0shea/WebHelpers.Mvc5)
+| WebHelpers.Mvc5 | 2.1.0 | [GitHub](https://github.com/c0shea/WebHelpers.Mvc5)
