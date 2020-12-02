@@ -2,7 +2,7 @@
     $(".datepicker").datepicker({
         todayHighlight: true,
         autoclose: true,
-        todayBtn: true,
+        todayBtn: "linked",
         zIndexOffset: 9999999 // Always show above navbar
     });
 
